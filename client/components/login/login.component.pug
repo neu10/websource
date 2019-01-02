@@ -1,0 +1,16 @@
+.valign-wrapper.row.login-box
+  .col.card.hoverable.s10.pull-s1.m6.pull-m3.l4.pull-l4
+    form
+      .card-content
+        span.card-title Enter credentials
+        .row
+          .input-field.col.s12
+            label(for='email') Email address
+            input#email.validate(type='email', name='email')
+          .input-field.col.s12
+            label(for='password') Password 
+            input#password.validate(type='password', name='password')
+      .card-action.right-align
+        input#reset.btn-flat.grey-text.waves-effect(type='reset')
+        input.btn.green.waves-effect.waves-light(type='submit', value='Login')
+        a.btn.green(value="Google login", href='/auth/login')

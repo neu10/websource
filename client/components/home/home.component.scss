@@ -1,0 +1,125 @@
+.row {
+    background: #fff;
+    height: 100%
+}
+ 
+#social {
+    font-size: 0;
+    margin-top: 24px;
+}
+
+#social a {
+    color: #dddddd;
+    font-size: 48px;
+    text-decoration: none;
+    padding: 10px;
+    &:hover {
+        color: #FF3B30;
+    }
+}
+    
+.image-bg{
+    // background: url(~/images/test.jpg) no-repeat;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    padding: 0 !important;
+}
+
+.image-bg-left{
+    background: url(~/images/test.jpg) no-repeat;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: 90%;
+    background-position: left;
+    height: 100%;
+}
+
+.no-row-spaces{
+    margin: 0 !important;
+}
+
+.valign-wrapper {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .text-center{
+    text-align: center;
+    margin: auto;
+  }
+
+  html,body{
+    height: 100%;
+}
+
+
+.split {
+    height: 100%;
+    top: 0;
+    @media (min-width:690px) {
+        position: fixed;
+    }
+
+    img {
+        /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+          filter: gray; /* IE5+ */
+          -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+          -webkit-transition: all .8s ease-in-out;  
+          cursor: all-scroll;
+        }
+    
+        img:hover {
+        filter: none;
+          -webkit-filter: grayscale(0);
+          -webkit-transform: scale(1.01);
+        }
+}
+
+.split.left {
+    @media (min-width:640px) {
+        width: 60%;
+        .centered > #social > h2{
+            color: #dddddd ;
+        }
+    }
+    left: 0;
+}
+
+.l-grey-text{
+    color: #dddddd !important;
+}
+
+.split.right {
+    width: 100%;
+    right:0;
+    z-index: 2;
+    @media (min-width:640px) {
+        width: 40%;
+    }
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1000;
+}
+
+#bottom-right {
+    position: fixed;
+    bottom: 0;
+    right: 42%;
+    z-index: 10000000;
+    font-size: 30px;
+  }

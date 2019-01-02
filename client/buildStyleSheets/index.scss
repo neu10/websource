@@ -1,0 +1,21 @@
+@import '~materialize-css/dist/css/materialize.css';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+ .no-row-spaces{
+     margin: 0 !important;
+ }
+ 
+ .valign-wrapper {
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-align-items: center;
+         -ms-flex-align: center;
+             align-items: center;
+   }
+ 
+   .text-center{
+     text-align: center;
+     margin: auto;
+   }
+ 
