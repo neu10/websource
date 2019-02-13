@@ -6,31 +6,44 @@ import { HomeRoutingModule }             from './home.routing.module';
 
 // Import all the components
 import {
-    MatSelectModule, MdNativeDateModule,
-    MdDatepickerModule,
-    MatDialogModule
+    MatSelectModule,
+    MatNativeDateModule,
+    MatDatepickerModule,
+    MatDialogModule,
+    MatSlideToggleModule,
+    MatRadioModule,
+    MatCheckboxModule
 } from '@angular/material';
  import { HomeComponent } from "../../components/home/home.component";
 import { LoginComponent } from "../../components/login/login.component";
- 
+import { PostmanComponent } from '../../components/postman/postman.component';
+import { StorageServiceModule } from "angular-webstorage-service";
+
 @NgModule({
     imports: [
         FormsModule,
         MatSelectModule,
-        MdDatepickerModule,
-        MdNativeDateModule,
+        MatDatepickerModule,
+        MatNativeDateModule,
         MatDialogModule,
         HttpModule,
         CommonModule,
-        HomeRoutingModule
+        HomeRoutingModule,
+        StorageServiceModule,
+        MatSlideToggleModule,
+        MatRadioModule,
+        MatCheckboxModule
+
     ],
     declarations: [
         HomeComponent,
-        LoginComponent
+        LoginComponent,
+        PostmanComponent
     ],
     exports: [
         HomeComponent,
-        LoginComponent
+        LoginComponent,
+        PostmanComponent
     ]
 })
 export class HomeModule { }

@@ -1,5 +1,4 @@
 .row {
-    background: #fff;
     height: 100%
 }
  
@@ -13,9 +12,6 @@
     font-size: 48px;
     text-decoration: none;
     padding: 10px;
-    &:hover {
-        color: #FF3B30;
-    }
 }
     
 .image-bg{
@@ -86,7 +82,7 @@
 
 .split.left {
     @media (min-width:640px) {
-        width: 60%;
+        width: 70%;
         .centered > #social > h2{
             color: #dddddd ;
         }
@@ -103,7 +99,7 @@
     right:0;
     z-index: 2;
     @media (min-width:640px) {
-        width: 40%;
+        width: 30%;
     }
 }
 
@@ -123,3 +119,33 @@
     z-index: 10000000;
     font-size: 30px;
   }
+
+  .github{
+      &:hover{
+          color : black;
+      }
+  }
+
+
+  #social a{
+    .fa-github-square{
+        &:hover{
+            color : black;
+        }
+  }
+  .fa-linkedin:hover{
+    color: #0077B5;
+  }  
+  .fa-envelope:hover{
+    color: #d93025;
+  }  
+  .fa-facebook:hover{
+    color: #3b5998;
+  }  
+  .fa-instagram:hover{
+    color: #fb3958;
+  }  
+  .fa-stack-overflow:hover{
+    color: #020202;
+  }  
+}
